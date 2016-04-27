@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Home"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Matt's Personal Site"
+description              : "Matthew (Matt) Manh-Tuong Nguyen's personal site and blog from San Francisco, California"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -18,9 +18,9 @@ teaser                   : # filename of teaser fallback teaser image placed in 
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "facebook", "google-plus", custom"
+  provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "matt-nguyen" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
@@ -61,26 +61,26 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Matt Nguyen"
+  avatar           : "https://s.gravatar.com/avatar/efe778b5d27cabe685002d671b5d8605?s=300"
+  bio              : "Software Engineer at Checkmate.io, Cal '10 alum, and aspiring entrepreneur currently interested in healthcare and travel tech. My passions include getting lost in new cities, expanding my culinary sensibilities, and creating tools that better people’s lives."
+  location         : "San Francisco"
+  email            : "inquiry@mattnguyen.me"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "mr.matt.nguyen"
   foursquare       :
-  github           :
+  github           : "mattnguyen"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "__mattn"
   lastfm           :
-  linkedin         :
+  linkedin         : "mrmattnguyen"
   pinterest        :
-  soundcloud       :
+  soundcloud       : "_mtn"
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
@@ -129,7 +129,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "<!--more-->"
 incremental: false
 
 
@@ -204,3 +204,24 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
